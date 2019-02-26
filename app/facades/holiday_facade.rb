@@ -8,6 +8,9 @@ class HolidayFacade
     @name
   end
 
+  def search_for_a_theme(theme)
+    holiday_service.
+  end
 
 
   def today

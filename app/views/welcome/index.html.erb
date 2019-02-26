@@ -1,1 +1,15 @@
 <h1> Holiday Fun!</h1>
+
+<h2> Today's Holiday(s) <h2>
+  <% @todays_holidays.each do |holiday|%>
+    <%= holiday["name"] %>
+  <%end%>
+
+  <div class="center">
+    <h1>Search for a Holiday </h1>
+    <%= form_tag :holiday, method: :get do %>
+    <%= text_field_tag :q, nil, placeholder: "Search for a holiday"%>
+    <br><br>
+    <%= submit_tag "Enter" %>
+    <%end%>
+  </div>
