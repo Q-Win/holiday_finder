@@ -1,0 +1,7 @@
+<h1> Results for <%= @theme %> <h1>
+
+<ul>
+  <% @holidays.each do |holiday| %>
+  <li> <%= holiday[:name] %> is  <%= holiday[:date]%></li>
+  <% end %>
+</ul>
