@@ -11,8 +11,8 @@ RSpec.describe HolidayService do
   it '.get_holidays_for_year' do
     service = HolidayService.new
     holidays = service.get_holidays_for_year
-    binding.pry 
-    expect(holidays).to eq("+11234567891")
+    
+    expect(holidays[:status]).to eq(200)
   end
 
   it '.get_todays_holiday' do

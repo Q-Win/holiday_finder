@@ -27,7 +27,6 @@ private
   end
 
 
-
   def response_budget_id
     conn.get "/v1/budgets" do |f|
       f.headers['Authorization'] = "Bearer #{token}"
