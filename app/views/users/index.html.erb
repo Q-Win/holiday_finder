@@ -4,3 +4,9 @@
 
 
 <h3> Favorite Holidays </h3>
+
+<ul>
+  <% @favorites.each do |holiday| %>
+  <li> <%= holiday.name %> is  <%= holiday.date%></li>
+  <% end %>
+</ul>
