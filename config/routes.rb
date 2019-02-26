@@ -3,5 +3,7 @@ Rails.application.routes.draw do
 root 'welcome#index'
 
 get 'holiday', to: "holiday#index"
+get 'users', to: "users#index"
+post 'favorites', to: "favorites#create"
 
 end

@@ -4,6 +4,10 @@
 
 <ul>
   <% @holidays.each do |holiday| %>
-  <li> <%= holiday[:name] %> is  <%= holiday[:date]%></li>
+  <li> <%= holiday[:name] %> is  <%= holiday[:date]%>
+  <% if current_user %>
+     <%= button_to "Add to Favorite", favorites_path, params: { name: holiday[:name], date: holiday[:date] }  %>
+  <% end %>
+  </li>
   <% end %>
 </ul>
