@@ -4,10 +4,6 @@ class HolidayFacade
 
   end
 
-  def location_name
-    @name
-  end
-
   def search_for_a_theme(theme)
     all_holidays = holiday_service.get_holidays_for_year[:holidays].values.flatten
 

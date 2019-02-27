@@ -15,5 +15,12 @@ RSpec.describe HolidayFacade do
     expect(today).to be_a(Array)
   end
 
+  it '.search_for_a_theme' do
+    facade = HolidayFacade.new
+    theme_results = facade.search_for_a_theme("day")
+
+    expect(theme_results).to be_a(Array)
+  end
+
 
 end

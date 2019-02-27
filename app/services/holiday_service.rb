@@ -26,13 +26,4 @@ private
     Faraday.new(url: 'https://holidayapi.pl/v1/holidays')
   end
 
-
-  def response_budget_id
-    conn.get "/v1/budgets" do |f|
-      f.headers['Authorization'] = "Bearer #{token}"
-    end
-  end
-
-
-
 end
