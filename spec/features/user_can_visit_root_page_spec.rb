@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-feature "As a visitor" do
+xfeature "As a visitor" do
   scenario "visit home page", :js do
     visit root_path
 
