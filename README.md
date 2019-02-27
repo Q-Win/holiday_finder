@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Holiday Finder is a web app used to look up holidays and their dates.
 
-Things you may want to cover:
+In order to use it you can visit the app in production at the link below
 
-* Ruby version
+https://holiday-finder2332.herokuapp.com/
 
-* System dependencies
+Holiday Finder is an open source project. So if you would like to contribute you
+can clone down the repo at
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+https://github.com/Q-Win/holiday_finder
