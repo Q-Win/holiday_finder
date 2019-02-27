@@ -1,6 +1,7 @@
 # README
 
-Holiday Finder is a web app used to look up holidays and their dates.
+Holiday Finder is a web app used to look up holidays and their dates. Holiday
+Finder uses an API provided by https://holidayapi.pl/v1/holidays
 
 In order to use it you can visit the app in production at the link below
 
@@ -24,8 +25,9 @@ Then run "rails s" to launch the server.
 
 Holiday Finder is built using
 
-Ruby on Rails 5.2.2
-Ruby 2.4.1
+Ruby on Rails 5.2.2  
+Ruby 2.4.1  
+
 
 # Schema
 
