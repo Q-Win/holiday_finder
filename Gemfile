@@ -43,7 +43,7 @@ group :development, :test do
   gem 'capybara'
   gem 'launchy'
   gem 'pry'
-  gem 'shoulda-matchers', '~> 3.1'
+  gem 'shoulda-matchers'
   gem 'simplecov'
   gem 'database_cleaner'
   gem 'selenium-webdriver'
