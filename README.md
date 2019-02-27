@@ -29,4 +29,4 @@ Ruby 2.4.1
 
 # Schema
 
-https://github.com/Q-Win/holiday_finder/blob/master/schema_design.png
+![](https://github.com/Q-Win/holiday_finder/blob/master/Screen%20Shot%202019-02-26%20at%206.00.25%20PM.png)
