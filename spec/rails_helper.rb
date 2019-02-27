@@ -61,6 +61,18 @@ RSpec.configure do |config|
   # config.filter_gems_from_backtrace("gem name")
 end
 
+Capybara.register_driver :selenium do |app|
+  Capybara::Selenium::Driver.new(app, broswer: :chrome)
+end
+
+Capybara.javascript_driver = :selenium_chrome
+
+Capybara.configure do |config|
+  config.default_max_wait_time = 5
+  config.default_driver = :selenium
+end
+
+
 
 Shoulda::Matchers.configure do |config|
   config.integrate do |with|
