@@ -24,6 +24,7 @@ private
 
   def conn
     Faraday.new(url: 'https://holidayapi.pl/v1/holidays')
+    
   end
 
 end
