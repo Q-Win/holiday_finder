@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def index
-    session[:user_id] = nil 
+    session[:user_id] = nil
     if @user = User.find_by(name: params["name"])
       session[:user_id] = @user.id
       @favorites = @user.favorites

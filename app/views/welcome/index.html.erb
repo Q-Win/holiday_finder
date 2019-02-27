@@ -1,11 +1,15 @@
 <h1> Holiday Fun!</h1>
-
-<h2> Login </h2>
-<%= form_tag :users, method: :get do %>
-<%= text_field_tag :name, nil, placeholder: "Enter your user name"%>
-<br><br>
-<%= submit_tag "Login" %>
-<%end%>
+  <%if current_user %>
+   <%= button_to "Dashboard", users_path, method: :get, params: { name: current_user.name}  %>
+   <%= button_to "Log Out", users_path, method: :get  %>
+  <% else %>
+    <h2> Login </h2>
+    <%= form_tag :users, method: :get do %>
+    <%= text_field_tag :name, nil, placeholder: "Enter your user name"%>
+    <br><br>
+    <%= submit_tag "Login" %>
+    <%end%>
+<% end %>
 
 <h2> Today's Holiday(s) <h2>
   <% @todays_holidays.each do |holiday|%>
